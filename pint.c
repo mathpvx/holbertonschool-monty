@@ -4,11 +4,11 @@
  * @stack: double pointer to the head of the stack
  * @line_num: line number in the file
  */
-void pint (stack_t **stack, unsigned line_num)
+void pint (stack_t **stack, unsigned int line_num)
 {
 	if (*stack == NULL)
 	{
-		fprintf (stderr, "L%u: can't pint, stack empty\n", line_num);
+		fprintf(stderr, "L%u: can't pint, stack empty\n", line_num);
 		exit(EXIT_FAILURE);
 	}
 

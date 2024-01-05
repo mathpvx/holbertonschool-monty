@@ -5,7 +5,7 @@
  * @line_num: file's line number
  * Return: Void
  */
-void pop (stack_t **stack, unsigned int line_num)
+void pop(stack_t **stack, unsigned int line_num)
 {
 	stack_t *h = *stack;
 

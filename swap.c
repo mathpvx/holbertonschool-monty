@@ -5,7 +5,7 @@
  * @line_num: file's line number
  * Return: void
  */
-void swap (stack_t **stack, unsigned int line_num)
+void swap(stack_t **stack, unsigned int line_num)
 {
 	stack_t *h = *stack, *ptr;
 

@@ -4,7 +4,7 @@
  * @list: the string to find \n
  * Return: 1 || 0
  */
-int nlfind (char *list)
+int nlfind(char *list)
 {
 	char *opcode = "\n";
 
@@ -29,13 +29,13 @@ int nlfind (char *list)
  * @ln: line number
  * Return: the number
  */
-int pushint (char *list, int ln)
+int pushint(char *list, int ln)
 {
 	char *opcode = "push";
 
 	while (*list != '\0')
 	{
-		if(*opcode == *list)
+		if (*opcode == *list)
 		{
 			opcode++;
 			list++;
