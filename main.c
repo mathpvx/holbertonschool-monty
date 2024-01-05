@@ -57,23 +57,23 @@ void execute(char *string[], stack_t *stack)
 
 	for (ln = 1, n = 0; string[n + 1]; n++, ln++)
 	{
-		if (_strcmp("push", string[n]))
+		if (strcmp("push", string[n]))
 			push(&stack, ln, pushint(string[n], ln));
-		else if (_strcmp("nop", string[n]))
+		else if (strcmp("nop", string[n]))
 			;
 		else
 		{
 			i = 0;
-			while (!_strcmp(st[i].opcode, "null"))
+			while (!strcmp(st[i].opcode, "null"))
 			{
-				if (_strcmp(st[i].opcode, string[n]))
+				if (strcmp(st[i].opcode, string[n]))
 				{
 					st[i].f(&stack, ln);
 					break;
 				}
 				i++;
 			}
-			if (_strcmp(st[i].opcode, "null") && !_strcmp(string[n], "\n"))
+			if (strcmp(st[i].opcode, "null") && !strcmp(string[n], "\n"))
 			{
 				fprintf(stderr, "L%u: unknown instruction %s", ln, string[n]);
 				if (!nlfind(string[n]))
