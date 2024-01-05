@@ -52,7 +52,7 @@ int pushint (char *list, int ln)
 					else
 					{
 						fprintf(stderr, "L%d: usage: push integer\n", ln);
-						exit(EXIT_FAILURE):
+						exit(EXIT_FAILURE);
 					}
 				}
 		}
