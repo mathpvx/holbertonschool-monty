@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 			continue;
 		}
 		else
-			execute(&stack, opcode, line_num);
+			execute_opcode(&stack, opcode, line_num);
 		line_num++;
 	}
 	fclose(file);
