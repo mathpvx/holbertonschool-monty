@@ -47,4 +47,5 @@ void pall(stack_t **stack, unsigned int line_num);
 int check_int(char *str);
 void pint(stack_t **stack, unsigned int line_num);
 void pop(stack_t **stack, unsigned int line_num);
+void swap(stack_t **stack, unsigned int line_num);
 #endif
