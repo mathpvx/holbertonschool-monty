@@ -31,7 +31,7 @@ void push(stack_t **stack, unsigned int line_num)
 
 	new_top->n = num;
 	new_top->prev = NULL;
-	new-tp^->next = *stack;
+	new_top->next = *stack;
 
 	if (*stack != NULL)
 		(*stack)->prev = new_top;
