@@ -1,13 +1,11 @@
 #ifndef __MONTY_H__
 #define __MONTY_H__
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <sys/syscall.h>
 #include <string.h>
+#include <ctype.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -40,17 +38,5 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 /**function prototypes**/
-void pint(stack_t **stack, unsigned int line_num);
-void free_stack(stack_t *head);
-int pushint(char *list, int ln);
-int _strcmp(char *opcode, char *list);
-void add(stack_t **stack, unsigned int line_num);
-void swap(stack_t **stack, unsigned int line_num);
-void pop(stack_t **stack, unsigned int line_num);
-void push(stack_t **stack, unsigned int line_number, int n);
-void pall(stack_t **stack, unsigned int line_num);
-void execute(char *string[], stack_t *stack);
-int nlfind(char *list);
-void free_list(char *a[]);
-int combfind(char *list, int ln);
+
 #endif
