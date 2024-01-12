@@ -10,7 +10,7 @@ int check_int(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (!isdigit(str[i] && str[i] != '-')
+		if (isdigit(str[i]) == 0 && str[i] != '-')
 				return (-1);
 	}
 	return (1);

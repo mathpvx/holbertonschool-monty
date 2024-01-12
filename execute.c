@@ -9,15 +9,14 @@ void execute_opcode(stack_t **stack, char *opcode, unsigned int line_num)
 {
 	int i;
 
-	instruction_t instructions[] =
-	{
+	instruction_t instructions[] = {
 		{"push", push},
 		{"pall", pall},
 		{"pint", pint},
 		{"pop", pop},
 		{"swap", swap},
 		{"add", add},
-		{"nop", nop}
+		{"nop", nop},
 		{NULL, NULL}
 	};
 

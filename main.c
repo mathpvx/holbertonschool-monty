@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 	unsigned int line_num = 1;
 	FILE *file;
 	size_t len;
-	char * opcode;
+	char *opcode;
 
 	if (argc != 2)
 	{
@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 	{
 		len = strlen(line);
 
-		if (len > 0 && line[len -1] == '\n')
+		if (len > 0 && line[len - 1] == '\n')
 			line[len - 1] = '\0';
 
 		opcode = strtok(line, " \t");
@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 		line_num++;
 	}
 	fclose(file);
-	free_stack(stack);
+	_free(stack);
 
 	return (0);
 }
