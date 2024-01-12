@@ -42,6 +42,6 @@ typedef struct instruction_s
 /**function prototypes**/
 FILE *open_file(const char *filename);
 void execute_opcode(stack_t **stack, char *opcode, unsigned int line_num);
-
+void push(stack_t **stack, unsigned int line_num);
 
 #endif
