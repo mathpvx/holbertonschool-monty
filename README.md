@@ -1,17 +1,5 @@
 # <p align="center">C - The Monty Program </p>
 
-## Table of Contents
-
--   [Objective](#Objective)
--   [Description](#Descritpion)
--   [Requirements](#Requirements)
--   [Compilation command](#Compilation-command)
--   [Mandatory Tasks](#Mandatory-tasks)
--   [Flowchart](#Flowchart)
--   [Installation](#Installation)
--   [Thanks](#Thanks)
--   [Authors](#Authors)
-
 ## Objective
 
 The goal of this project is to create an interpreter for Monty ByteCodes files.
